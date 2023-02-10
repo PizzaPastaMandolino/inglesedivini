@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- ajax -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.13.2/jquery-ui.min.js"></script>
+  <!-- Costume CSS -->
+  <link rel="stylesheet" type="text/css" href="css/flipbook.style.css">
+  <link rel="stylesheet" type="text/css" href="css/footer.css">
+  <link rel="stylesheet" type="text/css" href="css/font-awesome.css">
+  <!-- Bootstrap Css -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+
+
+  <script src="js/flipbook.min.js"></script>
+
+  <script type="text/javascript">
+
+    $(document).ready(function () {
+      $(".book-1").flipBook({
+        //Layout Setting
+        pdfUrl: 'pdf/grammatica.pdf',
+        lightBox: true,
+        layout: 3,
+        currentPage: { vAlign: "bottom", hAlign: "left" },
+        // BTN SETTING
+        btnPrint: { enabled: true },
+        btnDownloadPages: { enabled: false },
+        btnColor: 'rgb(73,128,210)',
+        sideBtnColor: 'rgb(73,128,210)',
+        sideBtnSize: 60,
+        sideBtnBackground: "rgba(0,0,0,.7)",
+        sideBtnRadius: 60,
+        //per riattivare il suono e far comparire il buttone nel reader enabled: true su btnSound e togliere le // js>flipbook.min.js riga 23 davanti a flipMp3
+        btnSound: { enabled: false, vAlign: "top", hAlign: "left" },
+        btnAutoplay: { vAlign: "top", hAlign: "left" },
+        btnShare: { enabled: false }
+      });
+    })
+  </script>
+
+  <style type="text/css">
+    body {
+      background-color: #f6f6f6;
+    }
+
+    .bookshelf .thumb {
+      display: inline-block;
+      cursor: pointer;
+      margin: 0px 0.5%;
+      width: 15% !important;
+      box-shadow: 18px 14px 16px -8px rgba(115,95,95,0.51);
+      -webkit-box-shadow: 18px 14px 16px -8px rgba(115,95,95,0.51);
+      -moz-box-shadow: 18px 14px 16px -8px rgba(115,95,95,0.51);
+      max-width: 120px;
+    }
+
+    .bookshelf .thumb img {
+      width: 100%;
+      display: block;
+    }
+
+    .bookshelf .shelf-img {
+      z-index: 0;
+      height: auto;
+      max-width: 100%;
+      vertical-align: top;
+      margin-top: -12px;
+    }
+
+    .bookshelf .covers {
+      width: 100%;
+      height: auto;
+      z-index: 99;
+      position: relative;
+      text-align: center;
+      margin-top: 50px;
+    }
+
+    .bookshelf {
+      text-align: center;
+      padding: 0px;
+    }
+  </style>
+  <title>Home</title>
+
+</head>
+
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg bg-dark fixed-top shadow-sm">
+    <a class="navbar-brand mx-3" href="#">
+      <img src="images/logo.png" alt="DIVINI LOGO" width="150">
+    </a>
+  </nav>
+
+  <br><br><br><br><br>
+
+  <!-- PDF -->
+  <div class="bookshelf">
+    <div class="covers">
+      <div class="thumb book-1">
+        <img src="images/thumb.png">
+        </a>
+      </div>
+    </div>
+    <img class="shelf-img" src="images/shelf_wood.png">
+  </div>
+  <br>
+
+  <!-- Footer -->
+  <section id="footer" class="footer">
+    <div class="container">
+      <div class="row text-center text-xs-center">
+        <div class="col-xs-12 col-sm-12 col-md-12 mt-2">
+          <h5>ITTS E. DIVINI</h5>
+          <ul class="list-unstyled quick-links">
+            <li><a href="https://goo.gl/maps/p2wXC2ho4rXHu97t6" target="_blank"><i
+                  class="fas fa-map-marker-alt"></i></i>ITTS Eustachio Divini</a>
+            </li>
+            <li><a href="#"><i class="fas fa-phone"></i>(+39) 0733 645777</a></li>
+            <li><a href="#"><i class="fas fa-fax"></i>(+39) 0733 645304</a></li>
+            <li><a href="#"><i class="fas fa-envelope"></i>mctf010005@pec.istruzione.it</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-12 mt-2 mt-sm-5">
+          <ul class="list-unstyled list-inline social text-center">
+            <li class="list-inline-item"><a href="https://www.instagram.com/itisdivini/" target="_blank"><i
+                  class="fab fa-instagram"></i></a></li>
+            <li class="list-inline-item"><a href="https://www.facebook.com/itdivini" target="_blank"><i
+                  class="fab fa-facebook-square"></i></a></li>
+            <li class="list-inline-item"><a href="https://www.youtube.com/@diviniedu" target="_blank"><i
+                  class="fab fa-youtube-square"></i></a></li>
+          </ul>
+        </div>
+        </hr>
+      </div>
+    </div>
+  </section>
+
+  <!-- Bootstrap Js -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+    integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"
+    integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD"
+    crossorigin="anonymous"></script>
+
+
+</body>
+
+</html>
