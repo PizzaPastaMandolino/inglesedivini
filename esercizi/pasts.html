@@ -95,6 +95,7 @@
         <input type="text" id="17" />
         (you go) yesterday?
         <br /><br />
+        <button id="es1Submit">Verifica</button>
       </div>
       <br /><br />
       <div class="es2">
@@ -166,5 +167,77 @@
         a phone call from Meg.
       </div>
     </div>
+    <script
+      src="https://code.jquery.com/jquery-3.6.4.js"
+      integrity="sha256-a9jBBRygX1Bh5lt8GZjXDzyOB+bWve9EiO7tROUtj/E="
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      $("#es1Submit").click(function () {
+        let nInputes1 = 17;
+        let i = 0;
+        let k = 1; //id
+        console.log($("#" + k).val());
+        const soluzioniEs1 = [
+          "ARELEAVING",
+          "AREGOINGTOSTAY",
+          "WILLENJOY",
+          "ISLEAVING",
+          "AREGOINGTOMISS",
+          "WILLYOUTAKE",
+          "ARENOTGOINGTOPASS",
+          "AREFLYING",
+          "WILLBE",
+          "WILLYOUDO",
+          "ISGOINGTORAIN",
+          "STARTS",
+          "FINISHES",
+          "JOINING",
+          "ISGOINGTOBE",
+          "DOESTHEFLIGHTTAKEOFF",
+        ];
+        for (i = 0; i < nInputes1; i++) {
+          if (
+            $("#" + k)
+              .val()
+              .toUpperCase()
+              .replace(/\s/g, "") === soluzioniEs1[i]
+          )
+            $("#" + k).css("background-color", "#3BCA9F");
+          else $("#" + k).css("background-color", "red");
+
+          k++;
+        }
+      });
+
+      $("#es2Submit").click(function () {
+        let nInputes2 = 8;
+        let i = 0;
+        let k = 17;
+        console.log($("#" + k).val());
+        const soluzioniEs2 = [
+          "ARECELEBRATING",
+          "ARECOMING",
+          "ISGOINGTOCONTEST",
+          "AREYOUGOING",
+          "WILLCOLLECT",
+          "AREYOUGOINGTOATTEND",
+          "WILLARRIVE",
+          "WILLYOUTAKE",
+        ];
+        for (i = 0; i < nInputes2; i++) {
+          if (
+            $("#" + k)
+              .val()
+              .toUpperCase()
+              .replace(/\s/g, "") === soluzioniEs2[i]
+          )
+            $("#" + k).css("background-color", "#3BCA9F");
+          else $("#" + k).css("background-color", "red");
+
+          k++;
+        }
+      });
+    </script>
   </body>
 </html>
