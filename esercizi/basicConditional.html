@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="EN">
+<head><meta charset="utf-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script type="text/javascript" src="basicConditional1.js"></script>
+    <script type="text/javascript" src="basicConditional2.js"></script>
+<title> Esercizi Grammaticali Inglese </title>
+<meta-charset="utf-8"/>
+</head>
+
+<body>
+<form name="modulo">
+    <p> Ex. 1 Conditional 0, 1</p>
+    <ol>
+        <li>When the water 
+            <select name="e1n1">
+                <option value=""> Choose an option</option>
+                <option value="1">Boils</option>
+                <option value="0">Will boil</option>
+            </select>
+            , it 
+            <select name="e1n2">
+                <option value=""> Choose an option</option>
+                <option value="1">Evaporates</option>
+                <option value="0">Will Evaporate</option>
+            </select>
+        </li>
+        <br>
+        <li>As soon as you 
+            <select name="e2n1">
+                <option value=""> Choose an option</option>
+                <option value="0">Will Turn</option>
+                <option value="1">Turn</option>
+            </select>
+            the key, the car engine 
+            <select name="e2n2">
+                <option value=""> Choose an option</option>
+                <option value="0">Will start</option>
+                <option value="1">Starts</option>
+            </select>
+        </li>
+        <br>
+        <li>My parents
+            <select name="e3n1">
+                <option value="">Choose an option</option>
+                <option value="1">Will arrive</option>
+                <option value="0">Arrive</option>
+            </select>
+            , only if
+            <select name="e3n2">
+                <option value="">Choose an option</option>
+                <option value="1">There is no</option>
+                <option value="0">There  will not be</option>
+            </select>
+            any train strike
+        </li>
+        <br>
+        <li>When it
+            <select name="e4n1">
+                <option value="">Choose an option</option>
+                <option value="1">Pours</option>
+                <option value="0">Will pour</option>
+            </select>
+            with rain, the ground
+            <select name="e4n2">
+                <option value="">Choose an option</option>
+                <option value="0">Will become</option>
+                <option value="1">Becomes</option>
+            </select>
+            flooded
+        </li>
+        <br>
+        <li>Unless you
+            <select name="e5n1">
+                <option value="">Choose an option</option>
+                <option value="1">Invite</option>
+                <option value="0">Do not invite</option>
+            </select>
+            Jane to the party, she
+            <select name="e5n2">
+                <option value="">Choose an option</option>
+                <option value="0">Does not  come</option>
+                <option value="1">Will not come</option>
+            </select>
+        </li>
+        <br>
+        <li>What
+            <select name="e6n1">
+                <option value="">Choose an option</option>
+                <option value="1">Will you do</option>
+                <option value="0">Do you do</option>
+            </select>
+            , as soon as you
+            <select name="e6n2">
+                <option value="">Choose an option</option>
+                <option value="1">Finish</option>
+                <option value="0">Will finish</option>
+            </select>
+            High School?
+        </li>
+        <br>
+        <li> If they
+            <select name="e7n1">
+                <option value="">Choose an option</option>
+                <option value="0">Will not let</option>
+                <option value="1">Do not let</option>
+            </select>
+            you come out, we
+            <select name="e7n2">
+                <option value="">Choose an option</option>
+                <option value="1">Will not able to</option>
+                <option value="0">Are not able to</option>
+            </select>
+            go dancing
+        </li>
+        <br>
+        <li> When traffic lights
+            <select name="e8n1">
+                <option value="">Choose an option</option>
+                <option value="1">Turn</option>
+                <option value="0">Will turn</option>
+            </select>
+            red, you
+            <select name="e8n2">
+                <option value="">Choose an option</option>
+                <option value="1">Need</option>
+                <option value="0">Willneed</option>
+            </select>
+            to stop
+        </li>
+    </ol>
+    <input type="button" value="submit" onclick="controlla(document.modulo.value);">
+    </form>
+    <form name="modulo2">
+    <p> Ex. 2: Conditional 1, 2, 3</p>
+    <ol>
+        <li>
+            If I had to make a speech I <input type="text" name="e1"> pretty nervous  (BE) +WOULD BE
+        </li>
+        <br>
+        <li>
+            If I <input type="text" name="e2"> you were sleeping I would not have woken you. (KNOW) + HAD KNOWN
+        </li>
+        <br>
+        <li>
+            If the weather <input type="text" name="e3"> fine tomorrow we will be able to go to the beach (BE)+ WERE
+        </li>
+        <br>
+        <li>
+            Your dog <input type="text" name="e4"> so fat if you didn't feed it so often (NOT BE)+ WOULD NOT BE
+        </li>
+        <br>
+        <li>
+            If her hair were black she <input type="text" name="e5"> completely different (LOOK)+ WOULD LOOK
+        </li>
+        <br>
+        <li>
+            If the boy <input type="text" name="e6"> to Santa Clause, he won't get a present (NOT WRITE) DOES NOT WRITE
+        </li>
+        <br>
+        <li>
+            They <input type="text" name="e7"> to the meeting if they had been informed about it. (NOT COME) + WOULD HAVE NOT COM
+        </li>
+        <br>
+        <li>
+            If we had studied more, we <input type="text" name="e8"> (PASS)  the entry test + WOULD HAVE PASSED
+        </li>
+        <br>
+        <li>
+            If they  <input type="text" name="e9"> him for permission he would have let you use his car (ASK)+ HAD ASKED
+        </li>
+        <br>
+        <li>
+            I'll <input type="text" name="e10"> you the money if you pay me back next week. (GIVE) + WILL GIVE
+        </li>
+        <br>
+        <li>
+            The secretary  <input type="text" name="e11"> the papers if the printer had worked (PRINT).+ WOULD HAVE PRINTED
+        </li>
+        <br>
+        <li>
+            If it <input type="text" name="e12"> yesterday we would have gone on a picnic (NOT RAIN).+ HAD NOT RAINED
+        </li>
+        <br>
+        <li>
+            If they lock the door properly nobody <input type="text" name="e13"> into their house (BREAK).WILL BREAK
+        </li>
+        <br>
+        <li>
+            If he <input type="text" name="e14"> much time he would go to the university (NOT WASTE).DID NOT WASTE
+        </li>
+    </ol>
+    <input type="button" value="submit" onclick="controlla(document.modulo.value);">
+</form>
+</body>
+</html>
