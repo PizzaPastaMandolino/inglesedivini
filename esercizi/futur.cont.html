@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Esercizi - Futures</title>
+    <link href="futu.css" rel="stylesheet" />
+    <!--Bootstrap CSS-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <h1>
+      FUTURE EXERCISES: FUTURE CONTINOUS - FUTURE PERFECT - FUTURE PERFECT
+      CONTINOUS
+    </h1>
+    <div class="content border border-dark rounded">
+      <div class="es1">
+        <h2>
+          EX. 1 Choose the correct option for each sentence related to future
+          continuous, future perfect, and future perfect continuous tense.
+        </h2>
+        1) By this time tomorrow, I
+        <select id="Es1">
+          <option value="1"></option>
+          <option value="2">will be working</option>
+          <option value="3">will have been working</option>
+          <option value="4">will have worked</option>
+        </select>
+        for 10 hours. <br /><br />
+        2) She
+        <select id="Es1">
+          <option value="1"></option>
+          <option value="2">will be running</option>
+          <option value="3">will have been running</option>
+          <option value="4">will have run</option>
+        </select>
+        a maraton next week. <br /><br />
+        3) They
+        <select id="Es1">
+          <option value="1"></option>
+          <option value="2">will be completing</option>
+          <option value="3">will have been completing</option>
+          <option value="4">will have completed</option>
+        </select>
+        the project by the end of the month.<br /><br />
+        4) At 6 p.m. tonight, I
+        <select id="Es1">
+          <option value="1"></option>
+          <option value="2">will be cooking</option>
+          <option value="3">will have been cooking</option>
+          <option value="4">will have cooked</option>
+        </select>
+        dinner. <br /><br />
+        5) By the time he arrives, we
+        <select id="Es1">
+          <option value="1"></option>
+          <option value="2">will be hanging</option>
+          <option value="3">will have been hanging</option>
+          <option value="4">will have hung</option>
+        </select>
+        the decorations.<br /><br />
+        <button id="es1Submit" class="border border-2 border-dark rounded">
+          <b>VERIFICA</b>
+        </button>
+      </div>
+    </div>
+    <br /><br />
+
+    <div class="content border border-dark rounded">
+      <div class="es2">
+        <h2>
+          EX. 2 Rewrite the following sentences using the future continuous, 
+          future perfect, or future perfect continuous tense.
+        </h2>
+        1) By the time we arrive, the party (start) 
+        <input type="text" id="17" placeholder="will celebrate" />
+        <br /><br />
+        2) I (study)
+        <input type="text" id="18" placeholder="will come" />
+        for three hours by the time you come over.
+        <br /><br />
+        3) They (play)
+        <input type="text" id="19" placeholder="is contesting" it />
+        tennis all afternoon tomorrow.
+        <br /><br />
+        4) She (sleep) 
+        <input type="text" id="20" placeholder="do you go" />
+        for ten hours when her alarm goes off.
+        <br /><br />
+        5) We (travel)
+        <input type="text" id="21" placeholder="is collecting" />
+        for 12 hours by the time we reach our destination.
+        <br /><br />
+        6) By next year, he (live)
+        <input type="text" id="22" placeholder="are you attending" />
+        in this city for five years.
+        <br /><br />
+        7) Maybe they
+        <input type="text" id="23" placeholder="are arriving" />
+        tomorrow
+        <br /><br />
+        8)
+        <input type="text" id="24" placeholder="Do you take" />
+        my kids to school, please?
+        <br /><br />
+        <button id="es2Submit" class="border border-2 border-dark rounded">
+          <b>VERIFICA</b>
+        </button>
+      </div>
+    </div>
+    <script
+      src="https://code.jquery.com/jquery-3.6.4.js"
+      integrity="sha256-a9jBBRygX1Bh5lt8GZjXDzyOB+bWve9EiO7tROUtj/E="
+      crossorigin="anonymous"
+    ></script>
+    <!-- Bootstrap Js -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"
+      integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      $("#es1Submit").click(function () {
+        let nInputes2 = 5;
+        let i = 0;
+        let k = 17;
+        console.log($("#" + k).val());
+        const soluzioniEs2 = [
+          "WILLHAVEBEENWORKIG",
+          "WILLBERUNING",
+          "WILLHAVECOMPLETED",
+          "WILLBECOOKING",
+          "WILLHAVEBEENHANGING",
+        ];
+        for (i = 0; i < nInputes2; i++) {
+          if (
+            $("#" + k)
+              .val()
+              .toUpperCase()
+              .replace(/\s/g, "") === soluzioniEs2[i]
+          )
+            $("#" + k).css("background-color", "#3BCA9F");
+          else $("#" + k).css("background-color", "red");
+
+          k++;
+        }
+      });
+    </script>
+  </body>
+</html>
