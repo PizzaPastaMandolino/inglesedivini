@@ -21,6 +21,15 @@ h1 {
   padding: 20px 10px 10px 10px;
 }
 
+.rounded {
+
+  -webkit-border-radius: 8px;
+  
+  -moz-border-radius: 8px;
+  
+  border-radius: 8px;
+}
+
 span {
   font-size: 13px;
   font-weight: bold;

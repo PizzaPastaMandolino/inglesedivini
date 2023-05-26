@@ -30,3 +30,12 @@ button {
   background-color: greenyellow;
   font-size: large;
 }
+
+.rounded {
+
+  -webkit-border-radius: 8px;
+  
+  -moz-border-radius: 8px;
+  
+  border-radius: 8px;
+}

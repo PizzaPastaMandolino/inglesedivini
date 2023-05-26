@@ -4,9 +4,6 @@
   font-family: "Work Sans", sans-serif;
 }
 
-h1 {
-  text-align: center;
-}
 
 .content {
   margin-left: 10px;
@@ -21,12 +18,17 @@ h1 {
   padding: 20px 10px 10px 10px;
 }
 
-span {
-  font-size: 13px;
-  font-weight: bold;
-}
 
 button {
   background-color: greenyellow;
   font-size: large;
+}
+
+.rounded {
+
+  -webkit-border-radius: 8px;
+  
+  -moz-border-radius: 8px;
+  
+  border-radius: 8px;
 }
